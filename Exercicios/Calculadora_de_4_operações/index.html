@@ -3,6 +3,8 @@
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/fonts/fonts.css">
     <title>Cadastro de Recrutras</title>
  </head>
  <body>
@@ -19,13 +21,19 @@
                 <input type="text" id="surnameInput"> 
             </div>
             <div class="study-container">
-            <label for="name" id="study">Campo de estudo: </label>
-            <input type="text" id="studyInput"> 
+                <label for="name" id="study">Campo de estudo: </label>
+                <input type="text" id="studyInput"> 
             </div>
             <div class="birthday-container">
-            <label for="name" id="birthday">Ano de nascimento: </label>
-            <input type="text" id="birthdayInput"> 
+                <label for="name" id="birthday">Ano de nascimento: </label>
+                <input type="text" id="birthdayInput"> 
             </div>
+            <button onclick="newTask()" class= "button" title="Clique aqui para enviar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                    <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z"/>
+                </svg>
+            </button>
+            
         </div>
     </div>
  </body>
