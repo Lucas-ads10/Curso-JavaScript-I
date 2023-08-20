@@ -14,34 +14,25 @@
             <h3>Login</h3>
                 <div class="firstBlock" >
                     <form class="names">
-                        Nome: <input type="text" name="name" id="name" onkeyup="receiveName()"> 
-                        <small>Formulário com valor dinamico</small><br></br>
-
-                        Campo Recebe Valor: <input type="text" name="receberName" id="receberName">
-                        
-                        <p>Valor do campo:<span id="valueName"></span> </p>
+                        Nome: <input type="text" name="name" id="name" > 
                     </form>
                 </div>
                 <div class="surname-container">
                     <form class="Surnames">
-                        Sobrenome: <input type="text" name="surname" id="surname" onkeyup="receiveSurname()">
-                        <input type="text" id="surnameInput"> 
+                        Sobrenome: <input type="text" name="surname" id="surname" >
                     </form>
                 </div>
                 <div class="study-container">
-                    <label for="name" id="study">Campo de estudo: </label>
-                    <input type="text" id="studyInput"> 
+                    <form>
+                    Campo de estudo: <input type="text" name="study" id="study" >
+                    </form>
                 </div>
                 <div class="birthday-container">
-                    <label for="name" id="birthday">Ano de nascimento: </label>
-                    <input type="text" id="birthdayInput"> 
+                    <form> 
+                       Nascimento: <input type="text" name="birthday" id="birthday"> 
+                    </form>
                 </div>
-                <button onclick="newTask()" id= "button" title="Clique aqui para enviar">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
-                        <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z"/>
-                    </svg>
-                </button>
-            </form>
+                <button onclick="pegarValores(evento)">Enviar</button>
         </div>
     </div>
  </body>

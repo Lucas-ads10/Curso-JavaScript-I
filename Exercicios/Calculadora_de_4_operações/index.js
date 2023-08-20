@@ -1,12 +1,48 @@
-//Chamar função quando o usuário digitar algum valor no campo "name"
-function receiveName(){
-    //Receber dados do campo "name" do formulario quando usuario digitar valor no campo
-    const nameOne = document.getElementById("name").value;
-    console.log(nameOne);
-
-    //Enviar os dados para o formulário do arquivo index.html utilizando o atributo ID
-    document.getElementById("receberName").value = nameOne;
-   
-    //Enviar os dados para o arquivo index.html utilizando o atributo ID
-    document.getElementById("valueName").innerHTML = nameOne;
+const register ={
+    nome: "",
+    sobrenome: "",
+    estudo: "",
+    ano:""
 }
+function pegarValores(evento){
+    register.nome = document.getElementById('name').value
+    register.sobrenome = document.getElementById('surname').value
+    register.estudo = document.getElementById('study').value
+    register.ano = document.getElementById('birthday').value
+
+    if (register.nome != '' || register.sobrenome != '' ||  register.estudo != '' ||  register.ano != ''){
+        document.write("Nome: " + nome + "<br>" + "Sobrenome: " + sobrenome "Estudo: " + estudo + "<br>" "Ano: " + ano +)
+    }else{
+        alert('Campos incompletos')
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Obtém o botão pelo ID
+    const botao = document.getElementById("button");
+    const inputElement = document.getElementById("name");
+// Adiciona um evento de clique ao botão
+
+    botao.addEventListener("submit", function (){
+  
+    function.preventDefault();
+        
+    // Obtém o valor do input quando o botão é clicado
+    const nameOne = inputElement.value;
+  
+  // Agora, você pode usar valorDoInput da forma que desejar
+    console.log("O valor do input é: " + nameOne);
+}
+    alert("O valor do input é: " + nameOne);

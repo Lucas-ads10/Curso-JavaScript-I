@@ -51,9 +51,3 @@ h3{
     align-items: center;
     justify-content: center;
 }
-.button:hover{
-    background-color: #9e9e9e; /* Cor de fundo ao passar o mouse */
-}
-.botao-icon i {
-    margin-right: 8px; /* Espaço entre o ícone e o texto */
-}
