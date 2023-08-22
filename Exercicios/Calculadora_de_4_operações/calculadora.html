@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/fonts/fonts.css">
+    <title>Calculadora</title>
+ </head>
+ <body>
+    <div class= "login-container">
+        <h1>Calculadora</h1>
+        <p id="resultadoConcatenado"></p>
+        <div class= "list">
+            <div class="firstBlock" >
+                
+            <form class="names">
+                        Primeiro Número: <input type="number" name="firstNumber" id="firstNumber" > 
+                </form>
+            </div>
+            <div class="surname-container">
+                <form class="Surnames">
+                       Segundo Número: <input type="number" name="secondNumber" id="secondNumber" >
+                </form>
+                <p id="valorDigitado"></p>
+            </div>
+            <input type="submit" onclick="calculo()" id="send"  value="Enviar">
+        </div>
+    </div>
+ </body>
+ <script src="index.js"></script>
+ </html>
