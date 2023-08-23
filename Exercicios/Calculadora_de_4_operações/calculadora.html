@@ -10,19 +10,23 @@
  <body>
     <div class= "login-container">
         <h1>Calculadora</h1>
-        <p id="resultadoConcatenado"></p>
+        <p id="valorDoInput">Resultado: </p>
         <div class= "list">
             <div class="firstBlock" >
-                
-            <form class="names">
-                        Primeiro Número: <input type="number" name="firstNumber" id="firstNumber" > 
+                <form class="names">
+                    Primeiro Número: <input type="number" name="firstNumber" id="firstNumber" > 
                 </form>
             </div>
             <div class="surname-container">
                 <form class="Surnames">
-                       Segundo Número: <input type="number" name="secondNumber" id="secondNumber" >
+                    Segundo Número: <input type="number" name="secondNumber" id="secondNumber" >
                 </form>
-                <p id="valorDigitado"></p>
+                <ul class="calculadora">
+                    <li id="resultAdicao"></li>
+                    <li id="resultSubtracao"></li>
+                    <li id="resultDivisao"></li>
+                    <li id="resultMultiplicacao"></li>
+                </ul>
             </div>
             <input type="submit" onclick="calculo()" id="send"  value="Enviar">
         </div>

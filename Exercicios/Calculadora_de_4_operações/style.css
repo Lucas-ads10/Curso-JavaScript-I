@@ -41,7 +41,7 @@ h3{
     margin: 10px;
     padding: 20px;    
 }
-.button{
+#send{
     cursor: pointer; /* Define o cursor ao passar o mouse */
     background-color: #000000;
     color: white;
@@ -50,4 +50,10 @@ h3{
     border-radius: 10px;
     align-items: center;
     justify-content: center;
+}
+
+.calculadora{
+    list-style-type: none;
+    display: inline-block;
+    margin: 50px 50px; 
 }
