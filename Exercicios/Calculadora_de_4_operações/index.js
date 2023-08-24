@@ -2,12 +2,12 @@ var nome = "";
 var sobrenome = "";
 var estudo = "";
 var ano = "";
-var primeiroNumero = "";
-var segundoNumero = "";
-var adição = "";
-var subtracao = "";
-var mutiplicacao = "";
-var divisao = "";
+var primeiroNumero = 0;
+var segundoNumero = 0;
+var adição = 0;
+var subtracao = 0;
+var mutiplicacao = 0;
+var divisao = 0;
 
 function capturar(){
     nome = document.getElementById('name').value;
@@ -20,25 +20,20 @@ function capturar(){
     }else{
         alert('Campos incompletos');
     }
-    
-    var inframe = document.getElementById('paginaExterna');
-    var inputPaginaExterna = inframe.contentDocument.getElementById('nome');
-    var valorDoInput = inputPaginaExterna.value;
-    console.log(valorDoInput)
 }
 
 
 
 function calculo(){
-    primeiroNumero = document.getElementById('firstNumber').value;
-    segundoNumero = document.getElementById('secondNumber').value;
-    
+    primeiroNumero = parseFloat(document.getElementById('firstNumber').value);
+    segundoNumero = parseFloat(document.getElementById('secondNumber').value);
+
     adicao = primeiroNumero + segundoNumero;
     subtracao = primeiroNumero - segundoNumero;
     divisao = primeiroNumero / segundoNumero;
     multiplicacao = primeiroNumero * segundoNumero;
 
-    if (primeiroNumero != '', segundoNumero != ''){
+    if (primeiroNumero != undefined, segundoNumero != undefined){
         document.getElementById('resultAdicao').innerHTML = "Adição: "+adicao;
         document.getElementById('resultSubtracao').innerHTML = "Subtração: "+subtracao;
         document.getElementById('resultDivisao').innerHTML = "Divisão: "+divisao;
